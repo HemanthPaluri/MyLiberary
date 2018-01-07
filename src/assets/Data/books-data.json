@@ -1,0 +1,60 @@
+{
+  "booksList":[
+      {
+          "title": "A Leader Who Had No Title",
+          "author": "Robin Sharama",
+          "Availability": {
+              "status": "yes",
+              "NoOFCopies" : "4"
+          },
+          "url": "/assets/books-cover-images/leader-who-had-no-title.jpg"
+
+      },
+      {
+          "title": "Wings Of Fire",
+          "author": "A P J Abdul Kalam",
+          "Availability": {
+              "status": "yes",
+              "NoOFCopies" : "4"
+          },
+          "url": "/assets/books-cover-images/wings-of-fire.jpg"
+      },
+      {
+      "title": "2 States",
+          "author": "Chetan Bagath",
+          "Availability": {
+              "status": "No",
+              "NoOFCopies" : "0"
+          },
+          "url": "/assets/books-cover-images/2-states.jpg"
+      },
+      {
+          "title": "A Monk Who Sold His Ferrari",
+          "author": "Robin Sharama",
+          "Availability": {
+              "status": "yes",
+              "NoOFCopies" : "2"
+          },
+          "url": "/assets/books-cover-images/monk-who-sold-his-ferrari.jpg"
+
+      },
+      {
+          "title": "Ignited Minds",
+          "author": "A P J Abdul Kalam",
+          "Availability": {
+              "status": "yes",
+              "NoOFCopies" : "4"
+          },
+          "url": "/assets/books-cover-images/Ignited-minds.jpg"
+      },
+      {
+      "title": "Half Girl Friend",
+          "author": "Chetan Bagath",
+          "Availability": {
+              "status": "yes",
+              "NoOFCopies" : "1"
+          },
+          "url": "/assets/books-cover-images/half-girlfriend.jpg"
+      }
+  ]
+}

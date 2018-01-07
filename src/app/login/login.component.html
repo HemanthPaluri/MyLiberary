@@ -1,0 +1,16 @@
+<!-- <div *ngIf="aut.authState | async as user; else showLogin">
+  <h1>Welcome {{ user.displayName }}!</h1>
+  <img class = "user-avatar" src="{{user.photoURL}}" alt="">
+  <button (click)="logout()">Logout</button>
+</div> -->
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-12 card">
+        <div>
+          <p>Please login.</p>
+          <button (click)="authService.googleLogin()">Login with Google</button>
+        </div>
+      </div>
+  </div>
+</div>

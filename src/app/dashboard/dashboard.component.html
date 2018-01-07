@@ -1,0 +1,33 @@
+<!-- <div *ngIf="afAuth.currentUserObservable | async as user; else showLogin">
+  <h1>{{ user.displayName }}</h1>
+  <img class = "user-avatar" src="{{user.photoURL}}" alt="">
+  <button (click)="logout()">Logout</button>
+</div>
+<ng-template #showLogin>
+  <p>Please login.</p>
+</ng-template> -->
+
+
+<!-- <h1>{{ username }}</h1>
+<img class= "user-avatar" src="{{userAvatar}}" alt="">
+<button (click)="logout()">Logout</button> -->
+
+<div class="container" style="width:1140px">
+  <div class="row card">
+    <div class="col-md-12">
+        <h1>Welcome To Liberary</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 card" *ngFor="let book of constructBooksList">
+      <div class="image-container">
+        <img src="{{book.url}}" alt="">
+      </div>
+      <h4 class="book-title">{{book.title}}</h4>
+      <h5 class="book-author"><span class="book-author-title">Author: </span>{{book.author}}</h5>
+      <h6 class="available-book-count"><span class="book-available-count">Available Copie's : </span>{{book.Availability.NoOFCopies}}</h6>
+      <button class="button-enabled" (click)="addBook($event)">Take this Book</button>
+    </div>
+
+  </div>
+</div>

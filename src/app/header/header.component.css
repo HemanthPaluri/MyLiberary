@@ -1,0 +1,52 @@
+.headercontainer{
+  width: 100%;
+  float: left;
+}
+.container{
+  width: 1000px;
+  margin:0 auto;
+}
+.user-avatar{
+  width:40px;
+  border-radius: 50%;
+}
+.col-md-8,.col-md-4{
+  float: left;
+}
+.row{
+  float: left;
+  width: 100%;
+}
+.col-md-8{
+  width: 60%;
+}
+.col-md-4{
+  width: 40%
+}
+.headercontainer .col-md-4 h1 {
+  float: left;
+  font-size: 12px;
+  margin-right: 20px;
+  bottom: 0px;
+  font-family: arial;
+  margin-top:18px;
+}
+/* .headercontainer {
+  background-color: #673ab7;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+} */
+.displayImage.col-md-2 {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 3px;
+}
+.username {
+  color: #FFFFFF;
+  opacity: 0.87;
+}
+.logout {
+  font-size: 35px;
+  float: left;
+  margin-top: 5px;
+}
