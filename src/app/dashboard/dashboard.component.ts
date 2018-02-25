@@ -7,6 +7,9 @@ import { Url } from 'url';
 import { BooksDataService } from '../core/books-data.service';
 import { BooksModel } from '../core/Model/BooksModel';
 
+import { MyShelfService } from '../core/my-shelf.service';
+import { HeaderComponent } from '../header/header.component';
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -19,8 +22,8 @@ export class DashboardComponent implements OnInit {
 
   booksData: BooksModel[] = [];
   errorMessage: string;
-
-  constructor(private bookDataService: BooksDataService) {}
+  selectedBook: any;
+  constructor(private bookDataService: BooksDataService, private myShelfService: MyShelfService) {}
   // logout() {
   //   this.authService.logout();
   // }
@@ -42,7 +45,13 @@ export class DashboardComponent implements OnInit {
 
   // tslint:disable-next-line:member-ordering
   constructBooksList = JSON.parse(window.localStorage.getItem('liberaryBookData')).booksList;
+
+  //
   addBook(event) {
     console.log(event);
+    this.selectedBook = event;
+    this.myShelfService.myShelfList(this.selectedBook);
+    // let headerObj = new HeaderComponent(this.myShelfService);
+    // headerObj.updateHeaderSelf()
   }
 }

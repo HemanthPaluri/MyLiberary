@@ -26,7 +26,7 @@
       <h4 class="book-title">{{book.title}}</h4>
       <h5 class="book-author"><span class="book-author-title">Author: </span>{{book.author}}</h5>
       <h6 class="available-book-count"><span class="book-available-count">Available Copie's : </span>{{book.Availability.NoOFCopies}}</h6>
-      <button class="button-enabled" (click)="addBook($event)">Take this Book</button>
+      <button class="button-enabled" (click)="addBook(book)">Take this Book</button>
     </div>
 
   </div>

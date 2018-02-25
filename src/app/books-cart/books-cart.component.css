@@ -1,0 +1,25 @@
+.cart-cover-pic img {
+  width: 200px;
+  height: 300px;
+  max-width: 100%;
+}
+.row.card.cart-book {
+  float: left;
+  width: 1140px;
+  margin-bottom: 10px;
+}
+.cart-cover-pic {
+  float: left;
+}
+.cart-book-description {
+  float: left;
+}
+.cart-book-action {
+  float: left;
+}
+.cart-book-description {
+  margin-top: 20px;
+}
+.button-container {
+  margin-top: 100px;
+}

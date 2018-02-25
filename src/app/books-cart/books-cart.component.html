@@ -1,0 +1,20 @@
+<div class="container" style="width:1140px">
+<div class = "row card cart-book" *ngFor="let book of cartBooksData">
+  <div class="col-md-4 cart-cover-pic">
+    <img src="{{book.url}}" alt="">
+  </div>
+  <div class="col-md-6 cart-book-description">
+    <div class="book-title">
+      <h3 class="book-title-text">{{book.title}}</h3>
+    </div>
+    <div class="book-author">
+        <h5 class="book-author-txt">{{book.author}}</h5>
+    </div>
+  </div>
+  <div class="col-md-2 cart-book-action">
+    <div class="button-container">
+      <button class="btn">Remove</button>
+    </div>
+  </div>
+</div>
+</div>

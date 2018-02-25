@@ -15,7 +15,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './core/auth.guard';
 import { AuthService } from './core/auth.service';
 import { BooksDataService } from './core/books-data.service';
+import { MyShelfService } from './core/my-shelf.service';
 import { HeaderComponent } from './header/header.component';
+import { BooksCartComponent } from './books-cart/books-cart.component';
 
 
 const appRoutes: Routes = [
@@ -33,6 +35,10 @@ const appRoutes: Routes = [
     component: DashboardComponent,
     canActivate: [AuthGuard]
   },
+  {
+    path: 'cart',
+    component : BooksCartComponent
+  }
   // {
   //   path: '**',
   //   component: LoginComponent
@@ -44,7 +50,8 @@ const appRoutes: Routes = [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    HeaderComponent
+    HeaderComponent,
+    BooksCartComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +61,7 @@ const appRoutes: Routes = [
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule
   ],
-  providers: [AuthService, AuthGuard, BooksDataService],
+  providers: [AuthService, AuthGuard, BooksDataService, MyShelfService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -50,3 +50,24 @@
   float: left;
   margin-top: 5px;
 }
+.BookShelfContainer {
+  position: relative;
+}
+.headerBookShelfIcon {
+  margin-top: 10px;
+}
+.bookShelfCount {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  color: transparent;
+  float: left;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1.5;
+  top: 22px;
+  left: 32px;
+}

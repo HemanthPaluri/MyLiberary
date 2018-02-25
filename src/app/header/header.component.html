@@ -8,11 +8,15 @@
       <div class="col-md-4">
             <div *ngIf="authService.currentUserObservable | async as user ; else showLogin">
               <div class="row">
-                <div class="username col-md-8">
+                <div class="username col-md-6">
                   <h1 class="header-white">Welcome {{ user.displayName }}</h1>
                 </div>
                 <div class="displayImage col-md-2">
                   <img class="user-avatar" src="{{user.photoURL}}" alt="">
+                </div>
+                <div  class="col-md-2 BookShelfContainer">
+                    <i class="material-icons header-white headerBookShelfIcon" (click)="myCart()">library_books</i>
+                  <a *ngIf="booksInShelfCount" class="header-white bookShelfCount" >{{booksInShelfCount}}</a>
                 </div>
                 <div class="logoutButton col-md-2">
                   <i class="material-icons logout header-white" (click)="logout()">power_settings_new</i>
